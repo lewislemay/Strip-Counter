@@ -49,4 +49,7 @@ do {
     askAgain = await input("Would you like to count more?(Y/N) ");
     askAgain = askAgain.toLowerCase();
 } while (askAgain.includes("y"));
+
+//Goodbye message
+output("Have a great day!");
 }
