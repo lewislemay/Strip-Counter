@@ -29,11 +29,5 @@ There are no known bugs at this time.
 
 ### __Installation and Setup__
 
-To use this program, please follow the steps below:
-
-1. Clone the repository to your device
-2. Use File Explorer (or Mac/Linux equivalent) to find and open the folder you cloned the repository in
-3. Once in the folder, open the "src" folder and navigate to the "index.html" file
-4. Open the "index.html" file in your web browser
-
-The program is now ready to use!
+To use this program, click the following link:/
+[https://html-preview.github.io/?url=https://github.com/lewislemay/Strip-Counter/blob/main/src/index.html]
