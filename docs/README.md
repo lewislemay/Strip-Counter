@@ -8,7 +8,7 @@ To run the console, launch `./src/index.html`.
 
 ## __Colour Strip Counter__
 ### __Project Description__
-__*Scope and Functionality*__ - This *Colour Strip Counter* is used to quickly add the colour strips counted, provide the amount of full sets you have, and provide the number of extra colour strips you have that do not make a full set.
+__*Scope and Functionality*__ - *Colour Strip Counter* is used to quickly add the colour strips counted, provide the amount of full sets you have, and provide the number of extra colour strips you have that do not make a full set.
 
 The user will first be asked for 2 inputs:
 1. The totals of each pile of colour strips they counted (with each amount being separated by a comma)
