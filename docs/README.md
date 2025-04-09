@@ -29,5 +29,5 @@ There are no known bugs at this time.
 
 ### __Installation and Setup__
 
-To use this program, click the following link:/
+To use this program, click the following link:\
 [https://html-preview.github.io/?url=https://github.com/lewislemay/Strip-Counter/blob/main/src/index.html]
