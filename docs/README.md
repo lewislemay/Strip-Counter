@@ -1,5 +1,3 @@
-# University of Alberta Browser Console Template Repository
-## Full Stack Web Application Development Program
 ### This repository is intended for the development of console JavaScript applications.
 
 Run `npm run lint` to attempt to detect errors in your repository.
