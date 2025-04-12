@@ -62,7 +62,7 @@ async function main() {
     
             //Menu -- display
             case "d":
-                output(`As of ${lastUpdate}, these are the total color strips we have:`)
+                output(`As of ${lastUpdate}, these are the color strips we have:`)
                 for (const [key, value] of Object.entries(allBrands)) {
                     output(`${key}: ${value}`);
                 }
@@ -90,39 +90,3 @@ async function main() {
     //End session
     output("Have a great day!");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-//Function -- main
-async function main() {
-
-do {
-    
-    //Run functions
-    await addStrips();
-    await calcSets();
-    await calcRemainder();
-    output(`Total Strips: ${totalStrips} \nTotal Sets: ${totalSets} \nExtra Strips: ${extraStrips}`);
-
-    //Ask to run again
-    askAgain = await input("Would you like to count more?(Y/N) ");
-    askAgain = askAgain.toLowerCase();
-} while (askAgain.includes("y"));
-
-//Goodbye message
-output("Have a great day!");
-}
-*/
