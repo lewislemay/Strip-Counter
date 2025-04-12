@@ -5,6 +5,9 @@ let extraStrips = 0;
 let stripsPerStore = 0;
 let askAgain = "";
 
+//Date of last count/update
+const lastUpdate = "April 11, 2025"
+
 //Define dictionary -- for keeping total amounts
 const allBrands = {
     "OLIGO Calura Permanent": 194,
@@ -59,6 +62,7 @@ async function main() {
     
             //Menu -- display
             case "d":
+                output(`As of ${lastUpdate}, these are the total color strips we have:`)
                 for (const [key, value] of Object.entries(allBrands)) {
                     output(`${key}: ${value}`);
                 }
