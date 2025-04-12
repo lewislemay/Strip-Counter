@@ -48,6 +48,59 @@ function calcRemainder() {
 
 //Function -- main
 async function main() {
+    do {
+        output("Enter an option: \nDisplay \nCount");
+        let menuSelect = await input("");
+        menuSelect = menuSelect.toLowerCase();
+    
+        //Switch Statement -- for menu
+        switch (menuSelect) {
+    
+            //Menu -- display
+            case "d":
+                output(dict.allBrands);
+                let askAgain = await input("Return to menu?(Y/N) ");
+                askAgain = askAgain.toLowerCase();
+                break;
+    
+            //Menu -- count
+            case "c":
+                await addStrips();
+                await calcSets();
+                await calcRemainder();
+                output(`Total Strips: ${totalStrips} \nTotal Sets: ${totalSets} \nExtra Strips: ${extraStrips}`);
+                askAgain = await input("Return to menu?(Y/N) ");
+                askAgain = askAgain.toLowerCase();
+                break;
+    
+            //Default
+            default:
+                output("Your input was not understand. Please try again.");
+                break;
+    }
+    } while (askAgain.includes("y"))
+    
+    //End session
+    output("Have a great day!");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//Function -- main
+async function main() {
 
 do {
     
@@ -65,3 +118,4 @@ do {
 //Goodbye message
 output("Have a great day!");
 }
+*/
