@@ -3,6 +3,7 @@ let totalStrips = 0;
 let totalSets = 0;
 let extraStrips = 0;
 let stripsPerStore = 0;
+let askAgain = "";
 
 //Define dictionary -- for keeping total amounts
 const allBrands = {
@@ -61,7 +62,7 @@ async function main() {
                 for (const [key, value] of Object.entries(allBrands)) {
                     output(`${key}: ${value}`);
                 }
-                let askAgain = await input("Return to menu?(Y/N) ");
+                askAgain = await input("Return to menu?(Y/N) ");
                 askAgain = askAgain.toLowerCase();
                 break;
     
@@ -77,10 +78,10 @@ async function main() {
     
             //Default
             default:
-                output("Your input was not understand. Please try again.");
+                output("Your input was not understood. Please try again.");
                 break;
     }
-    } while (askAgain.includes("y"))
+    } while (askAgain && askAgain.includes("y"))
     
     //End session
     output("Have a great day!");
