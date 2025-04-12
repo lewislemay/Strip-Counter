@@ -1,8 +1,20 @@
-  //Declaring variables
+//Declaring variables
 let totalStrips = 0;
 let totalSets = 0;
 let extraStrips = 0;
 let stripsPerStore = 0;
+
+//Define dictionary -- for keeping total amounts
+const allBrands = {
+    "OLIGO Calura Permanent": 194,
+    "OLIGO Calura Gloss": 96,
+    "OLIGO Caluraten": 52,
+    "IGORA Zero Amm": 171,
+    "CELEB": 125,
+    "MOROCCANOIL Color Rhapsody 10 Minute": 125,
+    "MOROCCANOIL Color Calypso": 80,
+    "JOICO Color Intensity": 124
+}
 
 //Function -- adding counted strips
 async function addStrips() {
