@@ -49,7 +49,7 @@ function calcRemainder() {
 //Function -- main
 async function main() {
     do {
-        output("Enter an option: \nDisplay \nCount");
+        output("Enter an option: \n(D)isplay \n(C)ount");
         let menuSelect = await input("");
         menuSelect = menuSelect.toLowerCase();
     
@@ -58,7 +58,9 @@ async function main() {
     
             //Menu -- display
             case "d":
-                output(dict.allBrands);
+                for (const [key, value] of Object.entries(allBrands)) {
+                    output(`${key}: ${value}`);
+                }
                 let askAgain = await input("Return to menu?(Y/N) ");
                 askAgain = askAgain.toLowerCase();
                 break;
