@@ -25,14 +25,6 @@ body, .white-on-black {
     --debug: #b8860b;
 }
 
-.green-on-black {
-    --text: var(--darkBrown);
-    --back: var(--blue);
-    --error: #f00;
-    --meta: #174368;
-    --debug: #ff0;
-}
-
 body, #themes {
     background-color: #1b1b1e;
 }
