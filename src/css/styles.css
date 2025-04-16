@@ -13,7 +13,7 @@ body, .white-on-black {
     --text: var(--black);
     --back: var(--blue);
     --error: #F00;
-    --meta: #32a3ff;
+    --meta: #174368;
     --debug: #FF0;
 }
 
@@ -29,7 +29,7 @@ body, .white-on-black {
     --text: var(--darkBrown);
     --back: var(--blue);
     --error: #f00;
-    --meta: #32a3ff;
+    --meta: #174368;
     --debug: #ff0;
 }
 
