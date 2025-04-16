@@ -21,7 +21,7 @@ body, .white-on-black {
     --text: var(--blue);
     --back: var(--black);
     --error: #b22222;
-    --meta: #00f;
+    --meta: #174368;
     --debug: #b8860b;
 }
 
