@@ -135,7 +135,7 @@ async function main() {
                 await addStrips();
                 await calcSets();
                 await calcRemainder();
-                output(`Total Strips: ${totalStrips} \nTotal Sets: ${totalSets} \nExtra Strips: ${extraStrips}`);
+                output(`Total Strips: ${totalStrips}  --  Total Sets: ${totalSets}  --  Extra Strips: ${extraStrips}`);
                 break;
 
             //Menu -- recount
