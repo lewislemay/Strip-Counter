@@ -4,6 +4,7 @@ let totalSets = 0;
 let extraStrips = 0;
 let stripsPerStore = 0;
 let askAgain = "";
+let menuSelect = "";
 
 //Date of last count/update
 const lastUpdate = "April 11, 2025"
@@ -54,7 +55,7 @@ function calcRemainder() {
 async function main() {
     do {
         output("Enter an option: \n(D)isplay \n(C)ount");
-        let menuSelect = await input("");
+        menuSelect = await input("");
         menuSelect = menuSelect.toLowerCase();
     
         //Switch Statement -- for menu
@@ -80,13 +81,10 @@ async function main() {
                 askAgain = askAgain.toLowerCase();
                 break;
     
-            //Default
+            //Default -- end session
             default:
-                output("Your input was not understood. Please try again.");
+                output("Have a great day!");
                 break;
     }
-    } while (askAgain && askAgain.includes("y"))
-    
-    //End session
-    output("Have a great day!");
-    }
+    } while (menuSelect.includes("d") || menuSelect.includes("c"));
+}
