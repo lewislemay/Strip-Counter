@@ -34,7 +34,7 @@ body, #themes {
     overflow-y:scroll;
     height: 96vh;
     margin: 0 auto;
-    padding: 2px;
+    padding: 8px;
 }
 
 #output p {
@@ -98,7 +98,6 @@ body, #themes {
 .theme:hover {
     border-color: #3aad40;
 }
-
 
 button {
     background: #837b72;
