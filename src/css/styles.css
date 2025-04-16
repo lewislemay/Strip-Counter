@@ -106,7 +106,7 @@ body, #themes {
 .theme:hover {
     border-color: #3aad40;
 }
-
+/*
 button {
     background: #585d70;
     color: #ffffff;
@@ -120,5 +120,6 @@ button:hover {
     background: #ffffff;
     transform: scale(1.05);
 }
+*/
 
 
