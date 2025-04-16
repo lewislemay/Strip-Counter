@@ -149,5 +149,5 @@ async function main() {
                 output("Have a great day!");
                 break;
     }
-    } while (menuSelect.includes("d") || menuSelect.includes("c") || menuSelect.includes("r"));
+    } while (menuSelect == "d" || menuSelect == "c" || menuSelect == "r");
 }
