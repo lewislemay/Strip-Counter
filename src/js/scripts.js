@@ -104,11 +104,13 @@ async function calcStrips() {
     }
 
     //Get how many strips per set
-    let countedExtras = await input("How many strips per set? ");
-    countedExtras = parseInt(countedExtras);
+    let stripsPerStore2 = await input("How many strips per set? ");
+    stripsPerStore2 = parseInt(stripsPerStore2);
     
     //Get total strip number
-    totalCountedStrips = (totalCountedSets * countedExtras);
+    let countedExtras = await input("How many extra strips? ");
+    countedExtras = parseInt(countedExtras);
+    totalCountedStrips = (totalCountedSets * stripsPerStore2) + countedExtras;
     return totalCountedStrips;
 }
 
