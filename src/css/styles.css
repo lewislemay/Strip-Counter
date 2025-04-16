@@ -2,7 +2,7 @@ html {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     --green: #0C0;
-    --white: #c7c7c7;
+    --white: #b9b9b9;
     --black: #222222;
     --error: #F00;
     --meta: #0FF;
@@ -34,7 +34,7 @@ body, .white-on-black {
 }
 
 body, #themes {
-    background-color: #CCC;
+    background-color: #0a0a0a;
 }
 
 #output {
@@ -71,7 +71,7 @@ body, #themes {
 
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 45%;
     position: relative;
     border: 3px solid var(--black);
 }
@@ -104,7 +104,7 @@ body, #themes {
 }
 
 .theme:hover {
-    border-color: #006e6e;
+    border-color: #3aad40;
 }
 
 
