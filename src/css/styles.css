@@ -1,40 +1,40 @@
 html {
     font-family:'Garamond', serif;
     
-    --green: #0C0;
-    --white: #b9b9b9;
-    --black: #222222;
+    --darkBrown: #312d29;
+    --black: #1b1b1e;
+    --blue: #628395;
     --error: #F00;
     --meta: #0FF;
     --debug: #FF0;
 }
 
 body, .white-on-black {
-    --text: var(--white);
-    --back: var(--black);
+    --text: var(--black);
+    --back: var(--blue);
     --error: #F00;
     --meta: #32a3ff;
     --debug: #FF0;
 }
 
 .black-on-white {
-    --text: var(--black);
-    --back: var(--white);
+    --text: var(--blue);
+    --back: var(--black);
     --error: #b22222;
     --meta: #00f;
     --debug: #b8860b;
 }
 
 .green-on-black {
-    --text: var(--green);
-    --back: var(--black);
+    --text: var(--darkBrown);
+    --back: var(--blue);
     --error: #f00;
     --meta: #32a3ff;
     --debug: #ff0;
 }
 
 body, #themes {
-    background-color: #37393A;
+    background-color: #1b1b1e;
 }
 
 #output {
@@ -73,7 +73,7 @@ body, #themes {
     margin: 0 auto;
     width: 45%;
     position: relative;
-    border: 3px solid var(--black);
+    border: 3px solid var(--blue);
 }
 
 .flash>.editing::after {
@@ -82,7 +82,7 @@ body, #themes {
 }
 
 #themes {
-    border: 3px solid var(--black);
+    border: 3px solid var(--blue);
     border-radius: 3px;
     position: absolute;
     top: 10px;
@@ -93,7 +93,7 @@ body, #themes {
 .theme {
     width: 25px;
     height: 25px;
-    border: 3px solid var(--black);
+    border: 3px solid var(--blue);
     border-radius: 3px;
     margin: 5px;
     text-align: center;
@@ -107,10 +107,10 @@ body, #themes {
     border-color: #3aad40;
 }
 
-/*
+
 button {
-    background: #585d70;
-    color: #ffffff;
+    background: #837b72;
+    color: #d4bfa6;
     border: none;
     padding: none;
     font-size: 30px;
@@ -118,7 +118,6 @@ button {
 }
 
 button:hover {
-    background: #ffffff;
+    background: #a59a8d;
     transform: scale(1.05);
 }
-*/
