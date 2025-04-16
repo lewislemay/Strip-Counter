@@ -107,5 +107,13 @@ body, #themes {
     border-color: #3aad40;
 }
 
+button {
+    background: #585d70;
+    color: #ffffff;
+    border: none;
+    padding: none;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
 
 
