@@ -125,7 +125,7 @@ async function main() {
         switch (menuSelect) {
     
             //Menu -- display
-            case "d":
+            case "1":
                 output(`As of ${lastUpdate}, these are the color strips we have:`)
                 for (const [key, value] of Object.entries(allBrands)) {
                     output(`${key}: ${value}`);
@@ -133,7 +133,7 @@ async function main() {
                 break;
     
             //Menu -- count
-            case "c":
+            case "2":
                 await addStrips();
                 await calcSets();
                 await calcRemainder();
@@ -141,7 +141,7 @@ async function main() {
                 break;
 
             //Menu -- recount
-            case "r":
+            case "3":
                 await calcStrips();
                 output(`Total Strips: ${totalCountedStrips}`);
                 break;
