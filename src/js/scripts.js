@@ -119,7 +119,6 @@ async function main() {
     do {
         output("Enter an option: \n1. Display \n2. Count \n3. Recount");
         menuSelect = await input("");
-        menuSelect = menuSelect.toLowerCase();
     
         //Switch Statement -- for menu
         switch (menuSelect) {
