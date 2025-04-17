@@ -117,7 +117,7 @@ async function calcStrips() {
 //Function -- main
 async function main() {
     do {
-        output("Enter an option: \n(D)isplay \n(C)ount \n(R)ecount");
+        output("Enter an option: \n1. Display \n2. Count \n3. Recount");
         menuSelect = await input("");
         menuSelect = menuSelect.toLowerCase();
     
@@ -151,5 +151,5 @@ async function main() {
                 output("Have a great day!");
                 break;
     }
-    } while (menuSelect == "d" || menuSelect == "c" || menuSelect == "r");
+    } while (menuSelect.includes("1") || menuSelect.includes("2") || menuSelect.includes("3"));
 }
