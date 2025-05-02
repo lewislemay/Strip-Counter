@@ -65,7 +65,7 @@ body, #themes {
     margin: 0 auto;
     width: 62%;
     position: relative;
-    border: 3px solid var(--red);
+    border: 5px solid var(--red);
 }
 
 .flash>.editing::after {
