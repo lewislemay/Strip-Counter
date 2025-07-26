@@ -90,7 +90,13 @@ button {
     height: 75px;
     padding: 10px;
     font-size: 23px;
+    border: 5px solid var(--white);
+    border-radius: 12px;
+}
+
+button:hover {
     border: 5px solid var(--red);
+    transition-duration: 0.2s;
 }
 
 #countbtn {
