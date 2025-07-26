@@ -130,8 +130,9 @@ async function main() {
             await calcRemainder();
             output(`Total Strips: ${totalStrips}  --  Total Sets: ${totalSets}  --  Extra Strips: ${extraStrips}`);
     });
-    recountbtn.addEventListener('click', function() {
-        let recountClicked = true;
+    recountbtn.addEventListener('click', async function() {
+        await calcStrips();
+        output(`Total Strips: ${totalCountedStrips}`);
     });
 }
 
