@@ -1,7 +1,7 @@
 html {
     font-family:'Garamond', serif;
     
-    --black: #1b1b1e; 
+    --black: #242424; 
     --white: #ccc2c2;
     --red: #992626;
     --error: #F00;
@@ -19,7 +19,7 @@ html {
 }
 
 body, #themes {
-    background-color: #1b1b1e;
+    background-color: var(--black);
 }
 
 #output {
