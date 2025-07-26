@@ -118,6 +118,33 @@ async function calcStrips() {
 
 //Function -- main
 async function main() {
+
+    //Referencing buttons
+    const countbtn = document.getElementById('countbtn');
+    const recountbtn = document.getElementById('recountbtn');
+
+    //Event listeners for buttons
+    countbtn.addEventListener('click', async function() {
+        await addStrips();
+            await calcSets();
+            await calcRemainder();
+            output(`Total Strips: ${totalStrips}  --  Total Sets: ${totalSets}  --  Extra Strips: ${extraStrips}`);
+    });
+    recountbtn.addEventListener('click', function() {
+        let recountClicked = true;
+    });
+}
+
+
+
+
+
+
+
+
+/*
+//Function -- main
+async function main() {
     do {
         output("Enter an option: \n1. Count \n2. Recount"); //used to include "1. Display"
         menuSelect = await input("");
@@ -133,7 +160,7 @@ async function main() {
                     output(`${key}: ${value}`);
                 }
                 break;
-            */
+            
     
             //Menu -- count
             case "1":
@@ -156,3 +183,4 @@ async function main() {
     }
     } while (menuSelect.includes("1") || menuSelect.includes("2"));
 }
+*/
