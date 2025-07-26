@@ -79,11 +79,18 @@ body, #themes {
     color: var(--text);
 }
 
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 button {
+    width: 150px;
+    height: 75px;
     padding: 10px;
     font-size: 23px;
-    border: 5px solid var(--border);
-    position: relative;
+    border: 5px solid var(--red);
 }
 
 #countbtn {
