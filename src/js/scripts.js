@@ -6,6 +6,7 @@ let stripsPerStore = 0;
 let askAgain = "";
 let menuSelect = "";
 
+/*
 //Date of last count/update
 const lastUpdate = "April 11, 2025"
 
@@ -58,6 +59,7 @@ const allBrands = {
     "WELLA Shinefinity": 0,
     "WELLA Blondor": 0
 }
+*/
 
 //Function -- adding counted strips
 async function addStrips() {
@@ -117,12 +119,13 @@ async function calcStrips() {
 //Function -- main
 async function main() {
     do {
-        output("Enter an option: \n1. Display \n2. Count \n3. Recount");
+        output("Enter an option: \n1. Count \n2. Recount"); //used to include "1. Display"
         menuSelect = await input("");
     
         //Switch Statement -- for menu
         switch (menuSelect) {
     
+            /*
             //Menu -- display
             case "1":
                 output(`As of ${lastUpdate}, these are the color strips we have:`)
@@ -130,9 +133,10 @@ async function main() {
                     output(`${key}: ${value}`);
                 }
                 break;
+            */
     
             //Menu -- count
-            case "2":
+            case "1":
                 await addStrips();
                 await calcSets();
                 await calcRemainder();
@@ -140,7 +144,7 @@ async function main() {
                 break;
 
             //Menu -- recount
-            case "3":
+            case "2":
                 await calcStrips();
                 output(`Total Strips: ${totalCountedStrips}`);
                 break;
@@ -150,5 +154,5 @@ async function main() {
                 output("Have a great day!");
                 break;
     }
-    } while (menuSelect.includes("1") || menuSelect.includes("2") || menuSelect.includes("3"));
+    } while (menuSelect.includes("1") || menuSelect.includes("2"));
 }
