@@ -7,14 +7,7 @@ html {
     --error: #F00;
     --meta: #232cad;
     --debug: #FF0;
-}
-
-body, .white-on-red {
-    --text: var(--white);
-    --back: var(--red);
-    --error: rgb(0, 81, 255);
-    --meta: #1b1b1e;
-    --debug: rgb(9, 255, 0);
+    --border: var(--white)
 }
 
 .white-on-black {
@@ -31,7 +24,7 @@ body, #themes {
 
 #output {
     background-color: var(--back);
-    overflow-y:scroll;
+    overflow-y: auto;
     height: 96vh;
     margin: 0 auto;
     padding: 8px;
@@ -40,7 +33,7 @@ body, #themes {
 #output p {
     margin: 0;
     color: var(--text);
-    font-size: 21px;
+    font-size: 23px;
 }
 
 #output .error {
@@ -63,9 +56,9 @@ body, #themes {
 
 .container {
     margin: 0 auto;
-    width: 62%;
+    width: 85%;
     position: relative;
-    border: 5px solid var(--red);
+    border: 5px solid var(--border);
 }
 
 .flash>.editing::after {
@@ -73,19 +66,10 @@ body, #themes {
  font-weight: bolder;
 }
 
-#themes {
-    border: 3px solid var(--red);
-    border-radius: 3px;
-    position: absolute;
-    top: 10px;
-    left: 2%;
-    padding: 5px;
-}
-
 .theme {
     width: 25px;
     height: 25px;
-    border: 3px solid var(--red);
+    border: 3px solid var(--border);
     border-radius: 3px;
     margin: 5px;
     text-align: center;
@@ -93,22 +77,4 @@ body, #themes {
     cursor: pointer;
     background-color: var(--back);
     color: var(--text);
-}
-
-.theme:hover {
-    border-color: #3aad40;
-}
-
-button {
-    background: #837b72;
-    color: #d4bfa6;
-    border: none;
-    padding: none;
-    font-size: 30px;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background: #a59a8d;
-    transform: scale(1.05);
 }
