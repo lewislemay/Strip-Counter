@@ -57,6 +57,7 @@ body, #themes {
 .container {
     margin: 0 auto;
     width: 85%;
+    height: fit-content;
     position: relative;
     border: 5px solid var(--border);
 }
@@ -77,4 +78,18 @@ body, #themes {
     cursor: pointer;
     background-color: var(--back);
     color: var(--text);
+}
+
+button {
+    padding: 10px;
+    font-size: 23px;
+    border: 5px solid var(--border);
+}
+
+#countbtn {
+    background-color: #ccc2c2;
+}
+
+#recountbtn {
+    background-color: #ccc2c2;
 }
