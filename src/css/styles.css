@@ -61,6 +61,7 @@ body, #themes {
     position: relative;
     border: 5px solid var(--border);
     overflow: hidden;
+    background-color: var(--black);
 }
 
 .button-group {
