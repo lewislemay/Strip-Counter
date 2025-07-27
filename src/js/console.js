@@ -61,7 +61,7 @@ for (const item of document.querySelectorAll(".theme")) {
 }
 async function run() {
   await main().catch((e) => output("\n---UNHANDLED EXCEPTION---\n" + e.stack, "error"));
-  output("\nEnd of program, please refresh the page (F5) to restart the program.", "meta");
+  //output("\nEnd of program, please refresh the page (F5) to restart the program.", "meta");
 }
 refreshTheme();
 run();
