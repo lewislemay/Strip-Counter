@@ -122,20 +122,19 @@ async function main() {
     //Referencing buttons
     const countbtn = document.getElementById('countbtn');
     const recountbtn = document.getElementById('recountbtn');
-    const enterKey = document.getElementById('enterKey');
 
     //Event listener -- Count button
-        countbtn.addEventListener('click', async function() {
-            document.getElementById("output").textContent = "";
-            await addStrips();
-            await calcSets();
-            await calcRemainder();
-            output(`Total Strips: ${totalStrips}  --  Total Sets: ${totalSets}  --  Extra Strips: ${extraStrips}`);
-        });
+    countbtn.addEventListener('click', async function() {
+        document.getElementById("output").textContent = ""; //Removes previous output
+        await addStrips();
+        await calcSets();
+        await calcRemainder();
+        output(`Total Strips: ${totalStrips}  --  Total Sets: ${totalSets}  --  Extra Strips: ${extraStrips}`);
+    });
 
     //Event listener -- Recount button
     recountbtn.addEventListener('click', async function() {
-        document.getElementById("output").textContent = "";
+        document.getElementById("output").textContent = ""; //Removes previous output
         await calcStrips();
         output(`Total Strips: ${totalCountedStrips}`);
     });
