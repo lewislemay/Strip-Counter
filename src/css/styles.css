@@ -34,7 +34,6 @@ body, #themes {
     margin: 0;
     color: var(--text);
     font-size: 30px;
-    text-align: center;
 }
 
 #output .error {
@@ -57,8 +56,8 @@ body, #themes {
 
 .container {
     margin: 30px auto;
-    width: 35%;
-    height: 450px;
+    width: 40%;
+    height: 400px;
     position: relative;
     border: 5px solid var(--border);
     overflow: hidden;
