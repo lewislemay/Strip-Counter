@@ -122,22 +122,15 @@ async function main() {
     //Referencing buttons
     const countbtn = document.getElementById('countbtn');
     const recountbtn = document.getElementById('recountbtn');
-    let enterbtn = document.getElementById('enterbtn');
+    const enterKey = document.getElementById('enterKey');
 
     //Event listener -- Count button
-    countbtn.addEventListener('click', async function() {
-        await addStrips();
-        await calcSets();
-        await calcRemainder();
-        output(`Total Strips: ${totalStrips}  --  Total Sets: ${totalSets}  --  Extra Strips: ${extraStrips}`);
-        
-        /*
-        //Event listener -- Enter button
-        enterbtn.addEventListener('Enter', async function() {
-            
+        countbtn.addEventListener('click', async function() {
+            await addStrips();
+            await calcSets();
+            await calcRemainder();
+            output(`Total Strips: ${totalStrips}  --  Total Sets: ${totalSets}  --  Extra Strips: ${extraStrips}`);
         });
-        */
-    });
 
     //Event listener -- Recount button
     recountbtn.addEventListener('click', async function() {
