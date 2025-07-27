@@ -1,11 +1,3 @@
-### This repository is intended for the development of console JavaScript applications.
-
-Run `npm run lint` to attempt to detect errors in your repository.
-
-Use `output()` and `await input()` from `./src/js/scripts.js` to allow the user to interact with the console.
-To run the console, launch `./src/index.html`.
-
-
 ## __Colour Strip Counter__
 ### __Project Description__
 __*Scope and Functionality*__ - *Colour Strip Counter* is used to quickly add the colour strips counted, provide the amount of full sets you have, and provide the number of extra colour strips you have that do not make a full set.
@@ -30,4 +22,4 @@ There are no known bugs at this time.
 ### __Installation and Setup__
 
 To use this program, click the following link:\
-[https://html-preview.github.io/?url=https://github.com/lewislemay/Strip-Counter/blob/main/src/index.html]
+https://lewislemay.github.io/Strip-Counter
