@@ -56,16 +56,11 @@ body, #themes {
 
 .container {
     margin: 20px auto;
-    width: 85%;
+    width: 30%;
     height: 550px;
     position: relative;
     border: 5px solid var(--border);
     overflow: auto;
-}
-
-.flash>.editing::after {
- content: "|";
- font-weight: bolder;
 }
 
 .button-group {
