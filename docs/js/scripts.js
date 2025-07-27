@@ -70,7 +70,7 @@ async function main() {
 
     //Event listener -- Count button
     countbtn.addEventListener('click', async function() {
-        document.getElementById("output").textContent = ""; //Removes previous output
+        //document.getElementById("output").textContent = ""; //Removes previous output
         await addStrips();
         await calcSets();
         await calcRemainder();
@@ -79,7 +79,7 @@ async function main() {
 
     //Event listener -- Recount button
     recountbtn.addEventListener('click', async function() {
-        document.getElementById("output").textContent = ""; //Removes previous output
+        //document.getElementById("output").textContent = ""; //Removes previous output
         await calcStrips();
         output(`Total Strips: ${totalCountedStrips}`);
     });
