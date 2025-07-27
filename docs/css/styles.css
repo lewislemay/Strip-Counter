@@ -32,7 +32,7 @@ body, #themes {
 
 #output p {
     margin: 0;
-    color: var(--white);
+    color: var(--text);
     font-size: 30px;
 }
 
