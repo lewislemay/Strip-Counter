@@ -84,4 +84,3 @@ async function main() {
         output(`Total Strips: ${totalCountedStrips}`);
     });
 }
-main();
